@@ -1,10 +1,19 @@
-import React from 'react';
-import './App.scss';
+import * as React from "react";
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
 
-function App() {
+import LoginPage from './pages/Auth/LoginPage/LoginPage';
+import SignUpPage from './pages/Auth/SignUpPage/SignUpPage';
+
+export default function App() {
   return (
-    <div></div>
+    <Routes>
+      <Route path="auth">
+        <Route path="login" element={<LoginPage />} />
+        <Route path="sign-up" element={<SignUpPage />} />
+      </Route>
+    </Routes>
   );
 }
-
-export default App;
