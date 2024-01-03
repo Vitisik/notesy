@@ -1,10 +1,14 @@
 import * as React from 'react';
+import {Link} from 'react-router-dom';
+import LoginPage from '../LoginPage/LoginPage';
+// import { useForm } from "react-hook-form";
 
 function SignUpPage() {
   return (
     <div>
-      <p>SignUp</p>
+      <Link to="/auth/login">Go to login</Link>
     </div>
+
   );
 }
 
