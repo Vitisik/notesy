@@ -1,7 +1,7 @@
 body {
   background-color: #5B7065;
 }
-.registerPage {
+.login-page {
 
 }
 
@@ -21,7 +21,7 @@ body {
   background-color: #C9D1C8;
 }
 
-.registerForms {
+.login-forms {
   display: flex;
   flex-direction: column;
 
@@ -45,7 +45,7 @@ body {
 
 }
 
-.registerButton {
+.login-button {
   margin: 0 auto ;
   margin-top: 10px;
   height: 30px;
@@ -58,13 +58,13 @@ body {
   transition: all 0.5s;
 }
 
-.registerButton:hover {
+.login-button:hover {
   font-size: 14px;
   width: 270px;
   transition: all 0.5s;
 }
 
-.registerLink {
+.login-link {
   margin: 0 auto;
 
   a {

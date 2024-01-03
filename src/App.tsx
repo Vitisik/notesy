@@ -3,6 +3,8 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+// import { useForm } from "react-hook-form";
+
 
 import LoginPage from './pages/Auth/LoginPage/LoginPage';
 import SignUpPage from './pages/Auth/SignUpPage/SignUpPage';
@@ -15,5 +17,6 @@ export default function App() {
         <Route path="sign-up" element={<SignUpPage />} />
       </Route>
     </Routes>
+
   );
 }

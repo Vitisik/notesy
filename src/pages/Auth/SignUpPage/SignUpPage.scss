@@ -1,7 +1,7 @@
 body {
   background-color: #5B7065;
 }
-.registerPage {
+.sign-page {
 
 }
 
@@ -21,7 +21,7 @@ body {
   background-color: #C9D1C8;
 }
 
-.registerForms {
+.sign-forms {
   display: flex;
   flex-direction: column;
 
@@ -45,7 +45,7 @@ body {
 
 }
 
-.registerButton {
+.sign-button {
   margin: 0 auto ;
   margin-top: 10px;
   height: 30px;
@@ -58,13 +58,13 @@ body {
   transition: all 0.5s;
 }
 
-.registerButton:hover {
+.sign-button:hover {
   font-size: 14px;
   width: 270px;
   transition: all 0.5s;
 }
 
-.registerLink {
+.sign-link {
   margin: 0 auto;
 
   a {
