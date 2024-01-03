@@ -1,26 +1,3 @@
-body {
-  background-color: #5B7065;
-}
-.sign-page {
-
-}
-
-.container{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-
-  margin: 50px auto;
-
-  width: 400px;
-
-  padding: 30px;
-
-  border-radius: 20px;
-
-  background-color: #C9D1C8;
-}
-
 .sign-forms {
   display: flex;
   flex-direction: column;
@@ -42,26 +19,24 @@ body {
       margin-top: 5px;
     }
   }
+  .sign-button {
+    margin: 0 auto ;
+    margin-top: 10px;
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
 
-}
+    cursor: pointer;
 
-.sign-button {
-  margin: 0 auto ;
-  margin-top: 10px;
-  height: 30px;
-  width: 100%;
-  border: none;
-  border-radius: 15px;
+    transition: all 0.5s;
+  }
 
-  cursor: pointer;
-
-  transition: all 0.5s;
-}
-
-.sign-button:hover {
-  font-size: 14px;
-  width: 270px;
-  transition: all 0.5s;
+  .sign-button:hover {
+    font-size: 14px;
+    width: 270px;
+    transition: all 0.5s;
+  }
 }
 
 .sign-link {

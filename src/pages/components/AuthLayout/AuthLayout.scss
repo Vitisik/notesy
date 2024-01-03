@@ -1,0 +1,18 @@
+.auth-page {
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #5B7065;
+  padding-top: 50px;
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0px auto;
+    width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #C9D1C8;
+  }
+}

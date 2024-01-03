@@ -6,9 +6,7 @@ import { ErrorMessage } from '@hookform/error-message';
 import axios from 'axios';
 
 import "./LoginPage.scss";
-
-
-
+import AuthLayout from '../../components/AuthLayout/AuthLayout';
 
 interface LoginForm {
   email: string;
@@ -20,20 +18,15 @@ function LoginPage() {
     register,
     handleSubmit,
     formState: { errors }
-
   } = useForm({
     mode: "onBlur",
     defaultValues: {
-
       email: '',
       password: '',
     }
   });
 
-
   const login = (input: LoginForm) => {
-    console.log(input);
-
     axios.post(`http://localhost:3000/login`, input)
       .then(res => {
         console.log('res', res);
@@ -41,8 +34,7 @@ function LoginPage() {
   };
 
   return (
-    <div className="login-page">
-      <div className="container">
+    <AuthLayout>
         <form className="login-forms" onSubmit={handleSubmit(login)}>
             <label>
                 Email:
@@ -50,7 +42,6 @@ function LoginPage() {
                   required: "This is required."
                 })}/>
               <ErrorMessage errors={errors} name="email" />
-
             </label>
 
             <label>
@@ -61,7 +52,6 @@ function LoginPage() {
                     value: 8,
                     message: 'Minimum 8 characters',
                   }
-
                 })}/>
               <ErrorMessage errors={errors} name="password" />
             </label>
@@ -69,13 +59,10 @@ function LoginPage() {
           <button className="login-button">Register</button>
         </form>
 
-
-
         <div className="login-link">
           <Link to="/auth/sign-up">Go To Sign Up</Link>
         </div>
-      </div>
-    </div>
+    </AuthLayout>
   );
 }
 

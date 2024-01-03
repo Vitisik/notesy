@@ -6,9 +6,7 @@ import { ErrorMessage } from '@hookform/error-message';
 import axios from 'axios';
 
 import "./SignUpPage.scss";
-
-
-
+import AuthLayout from '../../components/AuthLayout/AuthLayout';
 
 interface SignUpForm {
   name: string;
@@ -29,7 +27,6 @@ function SignUpPage() {
     }
   });
 
-
   const login = (input: SignUpForm) => {
     console.log(input);
 
@@ -40,8 +37,7 @@ function SignUpPage() {
   };
 
   return (
-    <div className="sign-page">
-      <div className="container">
+    <AuthLayout>
         <form className="sign-forms" onSubmit={handleSubmit(login)}>
           <label>
             Name:
@@ -67,7 +63,6 @@ function SignUpPage() {
               value: 8,
               message: 'Minimum 8 characters',
             }
-
             })}/>
             <ErrorMessage errors={errors} name="password" />
           </label>
@@ -78,8 +73,7 @@ function SignUpPage() {
         <div className="sign-link">
           <Link to="/auth/login">Go to login</Link>
         </div>
-      </div>
-    </div>
+    </AuthLayout>
   );
 }
 
